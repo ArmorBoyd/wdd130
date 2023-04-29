@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+:root {
+    --primary-color: #fff;
+    --secondary-color: #a6d9f7;
+    --accent1-color: #3b60e4;
+    --accent2-color: #86cd82;
+
+    --heading-font:var(--primary-color), serif;
+    --paragraph-font:var(--accent1-color), serif;
+
+    --nav-background-color:var(--accent1-color);
+    --nav-link-color:var(--primary-color);
+    --nav-hover-link-color:var(--secondary-color);
+    --nav-hover-background-color:var(--accent2-color);
+}
+
+body{
+    font-family: var(--paragraph-font);
+    max-width: 960px;
+    padding: 20px;
+    background-color: aqua;
+   
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: var(--heading-font);
+    color:var(--primary-color);
+    padding: 15px;
+    background-color: var(--accent1-color);
+}
+
+header{
+    padding: 20px;
+    background-color: var(--accent1-color);
+}
+
+p{padding: 25px;}
+
+nav{
+    background-color:var(--accent1-color);
+    font-size: 1.2rem;
+    display: flex;
+}
+nav a{
+    display: block;
+    color:var(--nav-link-color);
+    text-decoration: none;
+    padding: 1rem;
+}
+
+nav a:link, nav a:visited {
+    color: var(--nav-link-color);
+}
+
+nav a:hover {
+    color:var(--nav-hover-link-color);
+    background-color: var(--nav-background-color);
+}
