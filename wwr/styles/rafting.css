@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Instrument+Serif&family=Roboto:wght@500&display=swap');
 
+
+
 :root {
     --primary-color: #fff;
     --secondary-color: #a6d9f7;
@@ -50,13 +52,13 @@ li a{
     
 }
 div.logo img{
-	width: 200px;
+    width: 200px;
 	height: 200px;
 	float:left;
 	padding-bottom: 10px;
-	padding-top: 10px;
+    padding-top: 10px;
 	margin-left: 35%;
-	margin-right: 5%;
+    margin-right: 5%;
 	display: inline;
 }
 div.first{
