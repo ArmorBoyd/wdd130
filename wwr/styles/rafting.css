@@ -6,7 +6,8 @@
     --accent1-color: #3b60e4;
     --accent2-color: #86cd82;
     --accent-color: #DBD8B3;
-    
+
+
     --heading-font:var(--primary-color), serif;
     --paragraph-font:var(--accent1-color), serif;
 
@@ -49,13 +50,13 @@ li a{
     
 }
 div.logo img{
-    width: 200px;
+	width: 200px;
 	height: 200px;
 	float:left;
 	padding-bottom: 10px;
-    padding-top: 10px;
+	padding-top: 10px;
 	margin-left: 35%;
-    margin-right: 5%;
+	margin-right: 5%;
 	display: inline;
 }
 div.first{
