@@ -25,11 +25,22 @@ header{
     background-color: whitesmoke;
     padding-right: 300px;
     align-items: center;
+    justify-content: center;
     background-color: #f0f0f0;
-    border-style: solid;
+    height: 400px;
+}
+header img {
+    float: left;
+    width: 400px;
+	height: 400px;
+	padding-bottom: 20px;
+    padding-top: 10px;
+	margin-left: 50%;
+    margin-right: -1rem;
+	display: inline;
+    margin-top: -8px;
 }
 
-  
 nav {
     text-align: center;
     width: 300px;
@@ -44,13 +55,14 @@ nav ul {
     justify-content: center;
     justify-items: center;
     list-style-type: none;
-    margin-left: 50rem;
+    margin-left: 5rem;
 }
 
 nav ul li {
     text-align: center;
     padding: 15px 15px;
-    border-style: ridge;
+    color: black;
+    
     
 }
 nav li a{
@@ -60,36 +72,39 @@ nav li a{
 nav ul li:hover {
     background-color: #a6d9f7;
 }
-div.logo img{
-    width: 400px;
-	height: 400px;
-	float: left;
-	padding-bottom: 10px;
-    padding-top: 10px;
-	margin-left: 50%;
-    margin-right: 5%;
-	display: inline;
-    margin-top: -8px;
-}
-div.hero {
-    background-image: url(splash.jpg);
-    background-size: cover;
-    background-position: center;
+
+.hero {
+    background-image: url("splash.jpg");
     background-repeat: no-repeat;
-    border-style: solid;
+    background-size: cover;
+    background-position: center center;
+    height: 600px;
 }
+
 h1{
     color: var(--accent1-color);
     text-align: center;
     font-size: 3rem;
 }
 
-aside{
-    padding-left: 15px;
-    margin-right: 15%;
-    padding: 20px;
-
+h2{
+    color: var(--accent1-color);
+    text-align: center;
+    font-size: 2rem;
 }
+
+.three{
+    height: 1200px;
+}
+
+.three img{
+    margin: 10px;
+    float: left;
+    width: 400px;
+    padding: 15px;
+}
+
+
 p{
     width: 500px;
     height: auto;
@@ -98,27 +113,8 @@ p{
     background-color: white;
     color: black;    
     font-size: 2rem;
+    background-color: #DBD8B3;
 }
-div.two{
-    border-style: solid;
-    height: 250px;
-}
-h2{
-    color: var(--accent1-color);
-    text-align: center;
-    font-size: 2rem;
-}
-div.three{
-    border-style: solid;
-    height: 1200px;
-}
-div.gallery {
-    margin: 10px;
-    float: left;
-    width: 400px;
-    padding: 15px;
-  }
-
 nav.sociallinks{
     list-style-type: none;
     text-align: center;
@@ -128,4 +124,15 @@ nav.sociallinks{
     margin-top: 4%;
     margin-left: 10%;
     float:right;
+}
+
+figure{
+    margin: auto;
+    float: left;
+    width: 400px;
+    padding: 1px;
+}
+
+figcaption {
+    margin-left: 1.5rem;
 }
