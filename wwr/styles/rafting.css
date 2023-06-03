@@ -1,134 +1,406 @@
-@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif&family=Roboto:wght@500&display=swap');
-
-
-
-:root {
-    --primary-color: #fff;
-    --secondary-color: #a6d9f7;
-    --accent1-color: #3b60e4;
-    --accent2-color: #86cd82;
-    --accent-color: #DBD8B3;
-
-
-    --heading-font:var(--primary-color), serif;
-    --paragraph-font:var(--accent1-color), serif;
-
-    --nav-background-color:var(--secondary-color);
-    --nav-link-color:var(--primary-color);
-    --nav-hover-link-color:var(--secondary-color);
-    --nav-hover-background-color:var(--accent2-color);
-}
-
-/* Reset default margin and padding */
-body, h1, h2, p, figure, ul, li {
+*{
     margin: 0;
     padding: 0;
-  }
-  
-  /* Set background color and text color */
-  body {
-    background-color: #f2f2f2;
-    color: #333;
     font-family: Arial, sans-serif;
-  }
-  
-  /* Header styling */
-  header {
+}
+/* Header styling */
+header {
     background-color: #333;
     color: #fff;
     padding: 20px;
-  }
-  
-  header img {
-    width: 100px;
-    height: auto;
-  }
-  
-  nav ul {
-    list-style: none;
-    display: flex;
-  }
-  
-  nav ul li {
-    margin-right: 10px;
-  }
-  
-  nav ul li a {
-    color: #fff;
-    text-decoration: none;
-  }
+}
+
+header img {
+  width: 100px;
+  height: auto;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav ul li {
+  margin-right: 10px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
 nav ul li:hover {
     background-color: #a6d9f7;
 }
+/* End of Header Styling */
 
-.hero {
-    background-image: url("splash.jpg");
-    background-repeat: no-repeat;
+/* Main Styling*/
+
+/* Index Main CSS Styling*/
+.container{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(booknow.jpg);
+    background-position: center;
     background-size: cover;
-    background-position: center center;
-    height: 600px;
+    box-sizing: border-box;
+    padding-left: 8%;
+    padding-right: 8%;
+}   
+
+.row {
+    display: flex;
+    height: 88%;
+    align-items: center;
+}
+
+.col{
+    flex-basis: 50%;
+}
+ 
+button {
+    width: 180px;
+    
+    padding: 12px 0;
+    background: #fff;
+    border: 0;
+    border-radius: 20px;
+    outline: none;
+    margin-top: 30px;
+}
+
+button:hover{
+    background-color: gray;
+}
+
+button a {
+    text-decoration: none;
+    color: #000;
+    font-size: 12px;
+}
+
+.card{
+    width: 200px;
+    height: 230px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 10px 15px;
+    transition: transform 0.5s; 
+    background-position: center;
+    background-size: cover;
+}
+
+.card1{
+    background-image: url(cagayan.jpg);
+}
+
+.card2{
+    background-image: url(sheena.jpg);
+}
+
+.card3{
+    background-image: url(budyong.jpg);
+}
+
+.card:hover{
+    transform: translateY(-10px);
 }
 
 h1{
-    color: var(--accent1-color);
-    text-align: center;
-    font-size: 3rem;
+    color: #fff;
+    font-size: 100px;
+}
+.container p{
+    color: #fff;
+    font-size: 11px;
+    line-height: 15px;
 }
 
-h2{
-    color: var(--accent1-color);
+h5{
+    color: #fff;
+    text-shadow: 0 0 5px; 
+}
+.card p{
+    text-shadow: 0 0 15px;
+    font-size: 8px;
+    color: #fff;
+}
+.newsletter-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  float: right;
+}
+
+.newsletter-form h2{
+color: #fff;
+}
+/* End of Index Main CSS Styling*/
+
+/* Trips Main CSS Styling*/
+.background {
+    padding: 20px;
+    background-image: url("booknow.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 700px;
+}
+
+.background h1 {
+    margin: 0 auto;
+    padding-top: 15rem;
+    color: black;
+    font-size: 4rem;
     text-align: center;
-    font-size: 2rem;
+    padding: 20px 0;
+}
+h3 {
+    text-align: center;
+    font-size: x-large;
+    padding: 20px 0;
+}
+section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.reservations p{
+    text-align: center;
+    font-style: italic;
+    margin-right: 8rem;
+    margin-left: 8rem;
+    color: #000;
+}
+
+.reservations {
+    border-bottom: ridge;
+    margin-top: 9rem;
+    margin-left: 10rem;
+    margin-right: 10rem;
+    margin-bottom: 3rem;
+}
+
+.trips {
+    margin-top: 20px;
+}
+
+.trips img {
+    padding: 5px;
+}
+  figure {
+    text-align: center;
+}
+
+img {
+  border-radius: 5px;
+}
+  
+figcaption {
+    margin-top: 10px;
+    font-size: 14px;
+    color: black;
+    text-align: justify;
+    padding: 10px;
+}
+
+.booknow {
+    display: block;
+    width: 200px;
+    margin: 30px auto;
+    text-align: center;
+    padding: 10px 20px;
+    background-color: lightcoral;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.booknow:hover {
+  background-color: darkgreen;
+}
+
+table.trip-table {
+    width: 50%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    margin-right: 25rem;
+    margin-left: 25rem;
+}
+
+table.trip-table th, table.trip-table td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+table.trip-table th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+/* End of Trips CSS Styling*/
+
+/* Contact Us CSS Styling*/
+.contact h1 {
+    color: #000;
+}
+
+h3{
+  text-align: center;
+}
+.employee {
+  flex-direction: column;
+}
+
+.employee img {
+  width: 100%;
+  height: auto;
+}
+
+.ranks {
+  font-style: italic;
+  text-align: center;
+}
+
+.feedback {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: aliceblue;
+  padding-right: 40px;
+}
+
+fieldset {
+  margin-bottom: 20px;
+  border: none;
+  padding: 0;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+input[type="text"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+select {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+button[type="submit"] {
+    background-color: blue;
+    color: white;
+    padding: 10px 20px;
+    width: 100%;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  input[type="number"] {
+    width: 100%;
+    margin-bottom: 50px;
+    padding: 10px;
+    border: 2px solid;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #45a049;
+  }
+  
+  button[type="submit"]:focus {
+    outline: none;
+  }
+/* End of Contact Us CSS Styling*/
+
+/* About Us CSS Styling*/
+.hero {
+  background-image: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)),url("splash1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 800px;
+}
+
+.hero h1{
+  color: #fff;
+  font-size: 3rem;
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 100px;
+  padding-right: 50px;
 }
 
 .three{
-    height: 1200px;
+  display: flex;
+  justify-content: center;
 }
 
 .three img{
-    margin: 10px;
-    float: left;
-    width: 400px;
-    padding: 15px;
+  border: ridge;
+  border-width: 5px;
+  border-color: #DBD8B3;
+  width: 350px;
+  height: 300px;
+  margin: 70px;
+  margin-bottom: -0px;
+}
+.history p{
+  color: #000;
+  margin: 50px;
+  display: flex;
+  justify-content: center;
+  font-style: italic;
+  text-align: center;
+  font-size: 20px;
+  width: 500px;
+  padding: 50px;
+}
+.figs {
+  margin-left: 1.5rem;
+  text-align: center;
+  padding-bottom: 20px;
+}
+h2{
+  color: black;
+  text-align: center;
+  margin-top: 30px;
+}
+/*End of About Us Css Styling*/
+
+
+/* Footer styling */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 70px;
+  text-align: center;
+}
+
+.sociallinks {
+  margin-top: 10px;
+}
+
+.sociallinks a {
+  margin-right: 10px;
+  float: right;
 }
 
 
-p{
-    width: 500px;
-    height: auto;
-    margin-top: auto;
-    padding: 20px;
-    background-color: white;
-    color: black;    
-    font-size: 2rem;
-    background-color: #DBD8B3;
-}
-
-  /* Footer styling */
-  footer {
-    background-color: #333;
-    color: #fff;
-    padding: 60px;
-    text-align: center;
-  }
-  
-  .sociallinks {
-    margin-top: 10px;
-  }
-  
-  .sociallinks a {
-    margin-right: 10px;
-    float: right;
-  }
-
-
-figure{
-    margin: auto;
-    float: left;
-    width: 400px;
-    padding: 1px;
-}
-
-figcaption {
-    margin-left: 1.5rem;
-}
+/* End of Footer Styling*/
